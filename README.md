@@ -1,14 +1,22 @@
-# Flappy Bird RL Portfolio (PPO vs MBPO)
+# flappy-bird-mbrl
 
-This repository is a cleaned, employer-facing version of my Flappy Bird reinforcement learning project.
+Model-based and model-free reinforcement learning benchmark on Flappy Bird, curated as a publication-quality engineering portfolio.
 
-It contains:
-- End-to-end PPO training implementation in PyTorch
-- Model-based RL iterations (MBPO v5 and MBPO v6 JAX)
-- Original MBPO notebook that achieved the best recorded performance in this workspace
-- Reproducibility scripts, smoke tests, and benchmark evidence
+## Abstract
 
-## Best Recorded Result
+This project benchmarks model-based reinforcement learning (MBRL/MBPO variants) against PPO on Flappy Bird under a shared environment and comparable training budgets. The repository is curated to highlight reproducible experimentation, result traceability, and clear technical communication for research and engineering review.
+
+The codebase contains final training implementations, selected notebooks, benchmark evidence, and smoke-test validation paths suitable for practical reproducibility.
+
+## Methodology
+
+The benchmark combines:
+- PPO as a strong model-free baseline
+- MBPO-style model-based training iterations (including feature-only and JAX variants)
+- Shared game environment dynamics and aligned reward instrumentation
+- Metadata-backed result reporting for objective final comparison
+
+## Benchmark Summary
 
 Based on preserved experiment metadata:
 
@@ -39,6 +47,13 @@ Why the reward values appear in vertical "columns":
 - results/: benchmark artifacts and metadata
 - scripts/: utility scripts for result reporting
 
+## Final Notebook Set
+
+The notebook set is curated to the strongest and most presentation-ready artifacts:
+- notebooks/flappy_bird_mbpo.ipynb: final MBPO benchmark source notebook
+- notebooks/flappy_bird_ppo.ipynb: PPO benchmark/baseline notebook
+- notebooks/flappy_bird_comparison.ipynb: comparative analysis notebook
+
 ## Quick Start
 
 1. Create and activate a virtual environment.
@@ -67,6 +82,14 @@ python src/test_mbpo_v6_smoke.py
 python scripts/summarize_results.py
 ```
 
+## Final Result Bundle
+
+The results/ directory contains the publishable benchmark evidence:
+- benchmark_summary.json: consolidated comparison values
+- best_mbpo_metadata.json: final MBPO metrics snapshot
+- ppo_reference_metadata.json: final PPO reference metrics
+- fig4_combined_panel.png: benchmark figure used in the README
+
 ## Notes for Recruiters
 
 This project demonstrates:
@@ -78,3 +101,7 @@ This project demonstrates:
 ## Attribution
 
 The game implementation under flappy_bird_repo/ is adapted from an external Flappy Bird RL codebase included in this workspace, with its own LICENSE retained.
+
+## License
+
+This project is licensed under the MIT License. See LICENSE.
