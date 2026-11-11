@@ -1,0 +1,11 @@
+{
+  "total_episodes": 50000,
+  "average_reward_last_100": 12.265000000000002,
+  "max_reward": 61.79999999999987,
+  "training_time": 37751.627369880676,
+  "hyperparameters": {
+    "gamma": 0.99,
+    "eps_clip": 0.2,
+    "batch_size": 256
+  }
+}

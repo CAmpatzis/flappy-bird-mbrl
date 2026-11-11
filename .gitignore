@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Logs and outputs
+runs/
+checkpoints/
+saved_models/
+*.log
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local artifacts
+*.pkl
+*.pt
+*.png
+*.jpg
+*.jpeg
+*.mp4

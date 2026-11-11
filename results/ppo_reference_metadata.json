@@ -1,0 +1,10 @@
+{
+  "total_episodes_trained": 50000,
+  "mean_score": 10.939999999999994,
+  "max_score": 20.000000000000025,
+  "hyperparameters": {
+    "gamma": 0.99,
+    "eps_clip": 0.2,
+    "batch_size": 256
+  }
+}

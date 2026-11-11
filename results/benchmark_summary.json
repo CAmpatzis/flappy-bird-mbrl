@@ -1,0 +1,30 @@
+{
+  "best_model": "MBPO (from flappy_bird_mbpo.ipynb)",
+  "metrics": {
+    "mbpo": {
+      "total_episodes": 50000,
+      "average_reward_last_100": 12.265000000000002,
+      "max_reward": 61.79999999999987,
+      "training_time": 37751.627369880676,
+      "hyperparameters": {
+        "gamma": 0.99,
+        "eps_clip": 0.2,
+        "batch_size": 256
+      }
+    },
+    "ppo": {
+      "total_episodes_trained": 50000,
+      "mean_score": 10.939999999999994,
+      "max_score": 20.000000000000025,
+      "hyperparameters": {
+        "gamma": 0.99,
+        "eps_clip": 0.2,
+        "batch_size": 256
+      }
+    },
+    "comparison": {
+      "avg_last_100_delta": 1.325,
+      "max_reward_delta": 41.8
+    }
+  }
+}
