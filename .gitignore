@@ -25,3 +25,6 @@ saved_models/
 *.jpg
 *.jpeg
 *.mp4
+
+# Keep the benchmark figure used in README
+!results/fig4_combined_panel.png
